@@ -1,0 +1,245 @@
+html {
+    background-color: #8fd5a6;
+    margin: 0;
+    font-family: 'Marcellus', serif;
+}
+header img {
+margin: 1.25rem auto;
+display: block;
+background-color: #D3EEDC;
+padding: 1rem 20%;
+border: 0.125rem solid #329F5B;
+}
+header {
+    width: 100%;
+}
+li {
+    display: inline-block;
+    background-color: #E5C2C0;
+    margin-left: 10px;
+    transition: all 0.4s ease-in;
+}
+li:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    background-color: #E5C2C0;
+    padding: 2rem;
+    border: 0.125rem solid #652C29;
+    text-align: center;
+}
+nav {
+    margin: auto;
+    width: 90%;
+    font-size: 2rem;
+}
+nav a {
+    color: #AE4C47;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #F9F1F1;
+    margin-left: 2rem;
+    border: 0.125rem solid #652C29;
+    text-align: center;
+    padding: 1rem;
+}
+.banner {
+    background-image: url(./photo-1615094401770-713fecd4695a.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   color: white;
+   margin: 3rem auto;
+   height: 40rem;
+   border: 0.125rem solid rgb(7, 48, 7);
+}
+
+#btn {
+    border: 1px solid #fff;
+    color: white;
+   text-decoration: none;
+   padding: 1rem;
+   border-radius: 2rem;
+   font-size: 1.5rem;
+}
+.box {
+    background-color: rgba(38, 77, 48, 0.471);
+    height: 35%;
+    width: 35%;
+    padding: 1rem;
+    text-align: center;
+    margin: 14% auto;
+}
+.meeting {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 30rem;
+    bottom: 10rem;
+    border-top: 1rem solid rgb(31, 62, 39);
+   background-color: #D3EEDC; 
+   box-sizing: border-box;
+}
+.img-flower img {
+    width: 20rem;
+    height: 23.5rem;
+}
+.img-flower {
+    float: right;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+.meeting-text {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 1.5rem;
+}
+#info {
+    background-color: rgb(68, 132, 84);
+    padding: 1rem;
+    width: 8rem;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.5s ease-in-out;
+}
+#info:hover {
+    cursor: pointer;
+    background-color: rgba(31, 62, 39, 0.508);
+    transition: all 0.5s ease-in-out;
+}
+.about {
+ display: inline-block;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  border-top: 0.125rem solid rgb(31, 62, 39);
+}
+#about-img {
+    float: right;
+    padding: 12rem;
+}
+.about img {
+    width: 22rem;
+    height: 20rem;
+    display: block;
+    border-top: 2rem solid rgb(31, 62, 39);
+}
+.about-text {
+    width: 42%;
+    display: inline-block;
+    padding: 2rem;
+}
+#img2 {
+    position: relative;
+    bottom: 6rem;
+    left: 6rem;
+}
+footer {
+    background-color: rgb(68, 132, 84);
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 1366px) {
+    .about-text {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 1221px) {
+    .about-text {
+        width: 30%;
+    }
+    .img-flower img {
+        width: 15rem;
+        height: 20rem;
+    }
+    .img-flower {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    nav {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 1112px) {
+    .about-text {
+        width: 25%;
+    }
+    .img-flower img {
+        width: 12rem;
+        height: 16rem;
+    }
+    .img-flower {
+        font-size: 1rem;
+        padding: 6rem 0.25rem;
+    }
+    nav {
+        font-size: 1.1rem;
+    }
+    .meeting-text {
+        font-size: 1rem;
+        display: inline-block;
+        padding: 1rem;
+        width: 14rem;
+        }
+        #about-img {
+            padding: 7rem;
+        }
+
+}
+@media only screen and (max-width: 320px) , (max-width: 1111px) {
+    nav {
+       
+       font-size: 1rem;
+    }
+    nav a {
+        margin: 0;
+        padding: 0.1rem;
+    }
+    li {
+        margin: 0.4rem;
+    }
+    header img {
+        width: 40%;
+    }
+    .box {
+        background-color: transparent;
+    }
+    #btn {
+        font-size: 1rem;
+        padding: 0.3rem;
+        border: transparent;
+    }
+    .img-flower img {
+        width: 10rem;
+        height: 13.5rem;
+    }
+    .meeting-text {
+        padding: 1.5rem;
+        font-size: 0.2rem;
+    }
+    .meeting-text img {
+        width: 9rem;
+    }
+    .img-flower {
+        font-size: 0.5rem;
+        padding: 0.2rem 1.7rem;
+    }
+    .about-text {
+        width: 40%;
+        font-size: 1rem;
+        }
+        .about img {
+            width: 10rem;
+            height: 10rem;
+        }
+        #about-img {
+            bottom: 5rem;
+            position: relative;
+            right: 5rem;
+        }
+
+   
+}
+
+
