@@ -142,11 +142,6 @@ footer {
 
 @media only screen and (max-width: 1366px) {
     .about-text {
-        width: 40%;
-    }
-}
-@media only screen and (max-width: 1221px) {
-    .about-text {
         width: 30%;
     }
     .img-flower img {
@@ -161,7 +156,7 @@ footer {
         font-size: 1.5rem;
     }
 }
-@media only screen and (max-width: 1112px) {
+@media only screen and (max-width: 1139px) {
     .about-text {
         width: 25%;
     }
@@ -241,5 +236,3 @@ footer {
 
    
 }
-
-
