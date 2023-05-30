@@ -3,6 +3,13 @@ html {
     margin: 0;
     font-family: 'Marcellus', serif;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    max-width: 100%;
+}
 header img {
 margin: 1.25rem auto;
 display: block;
@@ -16,7 +23,6 @@ header {
 li {
     display: inline-block;
     background-color: #E5C2C0;
-    margin-left: 10px;
     transition: all 0.4s ease-in;
 }
 li:hover {
@@ -25,9 +31,13 @@ li:hover {
 
 ul {
     background-color: #E5C2C0;
-    padding: 2rem;
+    padding: 2rem 0;
     border: 0.125rem solid #652C29;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 nav {
     margin: auto;
@@ -39,7 +49,6 @@ nav a {
     font-weight: 500;
     text-decoration: none;
     background-color: #F9F1F1;
-    margin-left: 2rem;
     border: 0.125rem solid #652C29;
     text-align: center;
     padding: 1rem;
@@ -74,27 +83,33 @@ nav a {
 .meeting {
     position: relative;
     margin: auto;
-    width: 70%;
-    height: 30rem;
+    max-width: 1100px;
+    padding: 1rem;
     bottom: 10rem;
     border-top: 1rem solid rgb(31, 62, 39);
    background-color: #D3EEDC; 
-   box-sizing: border-box;
 }
 .img-flower img {
-    width: 20rem;
     height: 23.5rem;
 }
 .img-flower {
-    float: right;
     font-size: 1.2rem;
-    padding: 1.5rem;
+    padding: 2rem 0;
     font-weight: 600;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 .meeting-text {
     font-size: 1.3rem;
-    display: inline-block;
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.container {
+display: flex;
+justify-content: space-between;
+gap: 2rem;
 }
 #info {
     background-color: rgb(68, 132, 84);
@@ -112,7 +127,6 @@ nav a {
 .about {
  display: inline-block;
   font-size: 1.5rem;
-  box-sizing: border-box;
   border-top: 0.125rem solid rgb(31, 62, 39);
 }
 #about-img {
@@ -140,62 +154,20 @@ footer {
     padding: 1rem;
 }
 
-@media only screen and (max-width: 1366px) {
-    .about-text {
-        width: 30%;
-    }
-    .img-flower img {
-        width: 15rem;
-        height: 20rem;
-    }
-    .img-flower {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    nav {
+@media only screen and (max-width: 1149px) {
+    nav  {
         font-size: 1.5rem;
-    }
-}
-@media only screen and (max-width: 1139px) {
-    .about-text {
-        width: 25%;
-    }
-    .img-flower img {
-        width: 12rem;
-        height: 16rem;
-    }
-    .img-flower {
-        font-size: 1rem;
-        padding: 6rem 0.25rem;
-    }
-    nav {
-        font-size: 1.1rem;
-    }
-    .meeting-text {
-        font-size: 1rem;
-        display: inline-block;
-        padding: 1rem;
-        width: 14rem;
         }
-        #about-img {
+        .about-text {
+            width: 25%;
+        }
+         #about-img {
             padding: 7rem;
-        }
-
+            }   
 }
 @media only screen and (max-width: 320px) , (max-width: 1111px) {
-    nav {
-       
-       font-size: 1rem;
-    }
-    nav a {
-        margin: 0;
-        padding: 0.1rem;
-    }
     li {
         margin: 0.4rem;
-    }
-    header img {
-        width: 40%;
     }
     .box {
         background-color: transparent;
@@ -205,24 +177,8 @@ footer {
         padding: 0.3rem;
         border: transparent;
     }
-    .img-flower img {
-        width: 10rem;
-        height: 13.5rem;
-    }
-    .meeting-text {
-        padding: 1.5rem;
-        font-size: 0.2rem;
-    }
-    .meeting-text img {
-        width: 9rem;
-    }
-    .img-flower {
-        font-size: 0.5rem;
-        padding: 0.2rem 1.7rem;
-    }
     .about-text {
         width: 40%;
-        font-size: 1rem;
         }
         .about img {
             width: 10rem;
@@ -233,6 +189,18 @@ footer {
             position: relative;
             right: 5rem;
         }
-
-   
+}
+@media only screen and (max-width: 1269px) {
+    .about-text {
+        width: 100%;
+    }
+    .about img {
+        width: 22rem;
+        height: 20rem;
+    }
+    #about-img {
+        float: none;
+        margin: auto;
+        width: fit-content;
+    }
 }
